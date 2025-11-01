@@ -74,11 +74,16 @@ class LightTheme {
 
   static AppBarTheme get _appBar {
     return const AppBarTheme(
-      backgroundColor: AppColor.lightSurfaceColor,
+      backgroundColor: AppColor.primaryColor,
       elevation: 0,
       centerTitle: true,
       systemOverlayStyle: SystemUiOverlayStyle.dark,
-      iconTheme: IconThemeData(color: AppColor.lightOnSurfaceColor),
+      iconTheme: IconThemeData(color: AppColor.lightSurfaceColor),
+      titleTextStyle: TextStyle(
+        color: AppColor.darkOnSurfaceColor,
+        fontSize: 22,
+        fontWeight: FontWeight.w500,
+      ),
     );
   }
 

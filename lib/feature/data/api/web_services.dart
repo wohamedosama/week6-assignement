@@ -8,7 +8,7 @@ part 'web_services.g.dart';
 
 @RestApi(baseUrl: ApiConstants.baseUrl)
 abstract class WebServices {
-  factory WebServices(Dio dio, {required String baseUrl}) = _WebServices;
+  factory WebServices(Dio dio, {String baseUrl}) = _WebServices;
   @GET(ApiConstants.popular)
-  Future<List<PopularModel>> getPopularMovies(@Header('api_key') String apiKey);
+  Future<List<PopularModel>> getPopularMovies();
 }

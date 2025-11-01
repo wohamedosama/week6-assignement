@@ -76,11 +76,16 @@ class DarkTheme {
 
   static AppBarTheme get _appBar {
     return const AppBarTheme(
-      backgroundColor: AppColor.darkSurfaceColor,
+      backgroundColor: AppColor.darkSurfaceContainerLowColor,
       elevation: 0,
       centerTitle: true,
       systemOverlayStyle: SystemUiOverlayStyle.light,
-      iconTheme: IconThemeData(color: AppColor.darkOnSurfaceColor),
+      iconTheme: IconThemeData(color: AppColor.darkSurfaceColor),
+      titleTextStyle: TextStyle(
+        color: AppColor.darkPrimaryColor,
+        fontSize: 22,
+        fontWeight: FontWeight.w500,
+      ),
     );
   }
 

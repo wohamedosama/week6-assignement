@@ -7,7 +7,7 @@ class PopularModel {
   bool? adult;
   String? backdropPath;
   List<int>? genreIds;
-  int id;
+  int? id;
   String? originalLanguage;
   String? originalTitle;
   String? overview;
@@ -20,7 +20,7 @@ class PopularModel {
   int? voteCount;
 
   PopularModel({
-    required this.id,
+    this.id,
     this.adult,
     this.backdropPath,
     this.genreIds,
